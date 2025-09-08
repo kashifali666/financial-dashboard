@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "nodemon backend/index.js",
     "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
-    "start": "node backend/index.js"
+    "start": "node backend/index.js",
+    "postinstall": "prisma generate"
   },
   "keywords": [],
   "author": "",
